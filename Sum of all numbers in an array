@@ -1,0 +1,29 @@
+//Anonyms Function
+let sum=0;
+let arr=function(arr1)
+{   
+   for(i=0;i<arr1.length;i++)
+   {
+       currentValue=arr1[i];
+       sum=sum+currentValue;
+       
+       
+   }
+   
+   console.log(sum);
+};
+arr([1,2,3,4,5]);
+
+//IIFE
+let sum2=0;
+(function(arr2)
+{
+    for(i=0;i<arr2.length;i++)
+    {
+        currentValue=arr2[i];
+        sum2=sum2+currentValue;
+    }
+    console.log(sum2);
+})([2,3,4,5,6]);
+
+
