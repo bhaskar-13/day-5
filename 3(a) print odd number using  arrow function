@@ -1,0 +1,9 @@
+//Print odd number using Arrow Finction
+arr=[1,2,3,4,5];
+fun=(a)=>{
+    if(a%2!==0)
+    {
+      return a;
+    }
+};
+console.log(...arr.filter(fun));
