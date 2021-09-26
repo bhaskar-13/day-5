@@ -1,0 +1,78 @@
+//Anonyms Function
+Duplicate=()=>{
+  let arr1=[];
+  let arr2=[];
+  let dummy=[1,1,2,3,4,5];
+  let obj={};
+  for(let index in dummy)
+  {
+      currentValue=dummy[index];
+      if(obj[currentValue])
+      {
+          obj[currentValue]+=1;
+      }
+      
+      else
+      {
+          obj[currentValue]=1;
+      }
+      
+  }
+  
+  for(let key in  obj)
+  {
+     repeatCount=obj[key];
+    if(repeatCount==1)
+    {
+        arr1.push(key);
+    }
+    
+    else
+    {
+        arr2.push(key);
+    }
+  }
+  
+  console.log(arr1,arr2);
+  
+};
+Duplicate();
+//IIFE
+(function()
+{
+   let arr1=[];
+  let arr2=[];
+  let dummy=[1,1,2,3,4,5];
+  let obj={};
+  for(let index in dummy)
+  {
+      currentValue=dummy[index];
+      if(obj[currentValue])
+      {
+          obj[currentValue]+=1;
+      }
+      
+      else
+      {
+          obj[currentValue]=1;
+      }
+      
+  }
+  
+  for(let key in  obj)
+  {
+     repeatCount=obj[key];
+    if(repeatCount==1)
+    {
+        arr1.push(key);
+    }
+    
+    else
+    {
+        arr2.push(key);
+    }
+  }
+  
+  console.log(arr1,arr2); 
+    
+})();
