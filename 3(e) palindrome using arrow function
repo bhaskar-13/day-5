@@ -1,0 +1,14 @@
+palindrome=(arr)=>{
+    if(arr===arr.split("").reverse().join(""))
+    {
+        return arr +  " " + "is palindrome";
+    }
+    
+    else
+    {
+        return arr + " "+ "not palindrome";
+    }
+};
+let array=["malayalam","hindi","english","telgu","abcdcba"];
+result=array.map(palindrome);
+console.log(result);
