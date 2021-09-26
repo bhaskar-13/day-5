@@ -1,0 +1,3 @@
+array=[20,30,4959,56];
+sumOfArray=array.reduce((sum,curr)=>sum+curr,0);
+console.log(sumOfArray);
