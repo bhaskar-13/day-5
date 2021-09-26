@@ -1,0 +1,33 @@
+//Anonyms Function
+palindrome=(arr)=>{
+    if(arr===arr.split("").reverse().join(""))
+    {
+        return true;
+    }
+    
+    else
+    {
+        return false;
+    }
+};
+
+let array=["malayalam","hindi","english","telgu","abcdcba"];
+result=array.map(palindrome);
+ console.log(result);
+//IIFE Function
+palindrome1=(function(arr1)
+{
+    if(arr1===arr1.split("").reverse().join(""))
+    {
+        return true;
+    }
+    
+    else
+    {
+        return false;
+    }
+   
+    
+});console.log(array.map(palindrome1));
+
+
